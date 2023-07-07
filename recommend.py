@@ -1,9 +1,7 @@
 import pandas as pd
 import numpy as np
 
-SCRAPE = True
-USERNAME = "gmbabreu"
-
+USERNAME = ""
 
 def main():
     # Import V component
@@ -14,7 +12,7 @@ def main():
     V = V.to_numpy()
 
     # Get the user's ratings (recommended minimum amount of ratings: 30)
-    if SCRAPE:
+    if USERNAME!="":
         from get_user import scrape_ratings
         user = scrape_ratings(USERNAME)
     else:
