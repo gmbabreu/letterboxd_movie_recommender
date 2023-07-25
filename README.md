@@ -1,4 +1,4 @@
-# Letterboxd Movie Recommender
+# Movie Recommender
 This program recommends movies based on the user's movies tastes. It is made to work with the Letterboxd website, you can input your Letterboxd username and it will provide recommendations. If you do not have a letterboxd account, you can also manually fill in the user.csv file with movie ratings.
 The recommender uses publicly available movie rating data from letterboxd. It performs matrix factorization to condense those ratings and their features into the movies_factor.csv file, from which it bases its recommendations when a user inputs his own movie ratings
 
