@@ -5,7 +5,7 @@ USERNAME = ""
 
 def main():
     # Import V component
-    V = pd.read_csv(r"C:\Users\gmbab\OneDrive\Área de Trabalho\letterboxd\movies_factor.csv")
+    V = pd.read_csv("movies_factor.csv")
 
     # Create list of all movies
     movies = V.columns
