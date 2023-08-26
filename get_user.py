@@ -29,7 +29,7 @@ def scrape_ratings(username):
                 rating_elements = page_soup.find_all("li", class_="poster-container")
                 for rating in rating_elements:
                     # Extract the film title from the data attribute of the <div> element
-                    film_title = rating.find("div")["data-film-slug"].split("/")[2]
+                    film_title = rating.find("div")["data-film-slug"]
                     
                     # Check if the film has a rating
                     rating_element = rating.find("span", class_="rating")
